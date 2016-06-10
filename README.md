@@ -1,13 +1,13 @@
 # pumlhorse-mssql
-Provides Microsoft SQL functions for [Pumlhorse](https://www.github.com/mdickin/pumlhorse) scripts
+Provides Microsoft SQL functions for [Pumlhorse](https://www.github.com/pumlhorse/pumlhorse) scripts
 
 Wraps [node-mssql](https://github.com/patriksimek/node-mssql) package
 
 ## Installing npm module
-`npm install node-mssql`
+`npm install pumlhorse-mssql`
 
 ## Referencing module
-See [Pumlhorse documentation](https://www.github.com/mdickin/pumlhorse)
+See [Pumlhorse documentation](https://www.github.com/pumlhorse/pumlhorse)
 
 ## Connecting to a database
 The `connect` function takes a connection string. See [node-mssql](https://github.com/patriksimek/node-mssql) documentation
@@ -59,7 +59,7 @@ steps:
         stars: 4
       sql: >
              SELECT Name, Stars, Notes, ID
-             FROM FavoriteMovies
+             FROM myFavoriteMovies
              WHERE Stars >= @stars
              ORDER BY Stars, Name DESC
   - for:
